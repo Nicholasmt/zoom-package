@@ -10,7 +10,6 @@ class ZoomController
     public function zoom_meeting()
     {
 
-
         // Setup the following in your .Env file.
         // ZOOMEMAIL = your zoom register email,
         // ZOOMAPISECRET = your zoom secret key,
