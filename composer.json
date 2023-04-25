@@ -8,6 +8,13 @@
          
     },
     "license": "MIT",
+
+     "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/Nicholasmt/ZoomLibrary"
+        }
+    ],
     "authors": [
         {
             "name": "Nicholas Tochukwu",
