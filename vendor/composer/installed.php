@@ -3,7 +3,7 @@
         'name' => 'nicholasmt/zoom_library',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f308e7d8f708d332d2cc564564a3041756738403',
+        'reference' => 'b6b52c8e0e44a0ffa495887703fab47aa7a50b7c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -88,7 +88,7 @@
         'nicholasmt/zoom_library' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f308e7d8f708d332d2cc564564a3041756738403',
+            'reference' => 'b6b52c8e0e44a0ffa495887703fab47aa7a50b7c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

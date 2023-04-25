@@ -12,9 +12,11 @@
      "repositories":[
         {
             "type": "vcs",
-            "url": "https://github.com/Nicholasmt/ZoomLibrary"
+            "url": "https://github.com/Nicholasmt/zoom-package"
         }
     ],
+
+    
     "authors": [
         {
             "name": "Nicholas Tochukwu",
