@@ -35,5 +35,5 @@ For the JWT package
 
 This Package is very simple to use.
 
-Enjoy and don't forget to like thanks
+Enjoy! and don't forget to like thanks
 
