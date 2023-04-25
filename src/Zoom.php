@@ -4,10 +4,10 @@
  
 //Include Firebase Library and Dependencies
 // require __DIR__ . '../Models/Database.php';
-require_once  app_path('Http/nicholasmt/php-jwt-master/src/BeforeValidException.php');
-require_once app_path('php-jwt-master/src/ExpiredException.php');
-require_once app_path('php-jwt-master/src/SignatureInvalidException.php');
-require_once app_path('php-jwt-master/src/JWT.php');
+require_once app_path('Http/nicholasmt/php-jwt-master/src/BeforeValidException.php');
+require_once app_path('Http/nicholasmt/php-jwt-master/src/ExpiredException.php');
+require_once app_path('Http/nicholasmt/php-jwt-master/src/SignatureInvalidException.php');
+require_once app_path('Http/nicholasmt/php-jwt-master/src/JWT.php');
 
 use \Firebase\JWT\JWT;
 use Illuminate\Support\Facades\Facade;

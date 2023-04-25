@@ -21,7 +21,7 @@ Route::get('zoom', function(){
     
     return $response;
    
-    \Artisan::call('vendor:publish --tag=jwt-master');
-    \Artisan::call('vendor:publish --tag=zoom-controller');
+    // \Artisan::call('vendor:publish --tag=jwt-master');
+    // \Artisan::call('vendor:publish --tag=zoom-controller');
 
 });
