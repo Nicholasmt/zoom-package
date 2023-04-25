@@ -1,4 +1,5 @@
-# Zoom-package
+# Zoom-package  <span>   <img src="https://st2.zoom.us/static/6.3.12613/image/new/topNav/Zoom_logo.svg"> </span>
+
 This is a laravel zoom api library package
 
 # To get started
