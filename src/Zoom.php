@@ -20,8 +20,8 @@ class Zoom extends Facade
 	
 	//function to generate JWT
 	private function generateJWTKey() {
-		$key = env('ZOOMAPIKEY');
-		$secret = env('ZOOMAPISECRET');
+		$key = env('ZOOM_API_KEY');
+		$secret = env('ZOOM_API_SECRET');
 		$token = array(
 			"iss" => $key,
 			"exp" => time() + 3600 //60 seconds as suggested
@@ -71,7 +71,7 @@ class Zoom extends Facade
     	{
 
 		//Enter_Your_Email
-		$zoom_email = env('ZOOMEMAIL');
+		$zoom_email = env('ZOOM_EMAIL');
 		$request_url = "https://api.zoom.us/v2/users/$zoom_email/meetings";
 		
 		$headers = array(
