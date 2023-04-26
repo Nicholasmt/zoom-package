@@ -10,11 +10,6 @@ class ZoomController
     public function zoom_meeting()
     {
 
-        // .Env File Setup.
-        // ZOOM_EMAIL = your zoom register email.
-        // ZOOM_API_SECRET = your zoom secret key.
-        // ZOOM_API_KEY = your zoom key.
-
         $zoom_meeting = new Zoom();
         $data = array();
         // meeting details array
@@ -25,7 +20,6 @@ class ZoomController
         $data['password'] 	=  '12345';
         // create meeting
         $response = $zoom_meeting->createMeeting($data);
-        
         return $response;
 
        
