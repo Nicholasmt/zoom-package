@@ -17,28 +17,82 @@ ZOOM_API_SECRET = your zoom secret key.
 ZOOM_API_KEY = your zoom key.
 
 ```
- <h4> Public package Using </h4>
+ <h4> Create a Controller </h4>
+ 
+```
+php artisan make:controller ZoomController --resource
  
 ```
 
- php artisan vendor:publish --tag=library-controller
+Require the package as below: 
+
+```
+ use Nicholasmt\ZoomLibrary\Zoom;
  
 ```
-For publish the package controller
-
-In the Controller, method has already been created just pass in array data with the neccessary detail to create zoom meeting. 
+To create zoom meeting use code in Method:
 
 ```
- php artisan vendor:publish --tag=jwt-master
+$zoom_meeting = new Zoom();
+$data = array();
+// meeting details array
+$data['topic'] 		= 'Meeting Title';
+$data['start_date'] = '25/04/2023';
+$data['duration'] 	=  25; /*in minutes*/
+$data['type'] 		= 2;
+$data['password'] 	=  '12345';
+// create meeting
+$response = $zoom_meeting->createMeeting($data);
+return $response;
  
 ```
-For the JWT package
 
-Route setup for the controller.
+Code Preview:
 
 ```
+ 
+<?php
 
- Route::get('create-meeting', [Nicholasmt\ZoomLibrary\Controllers\ZoomController::class, 'zoom_meeting'])->name('create-meeting');
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+use Nicholasmt\ZoomLibrary\Zoom;
+ 
+class ZoomController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $zoom_meeting = new Zoom();
+        $data = array();
+        // meeting details array
+        $data['topic'] 		= 'Meeting Title';
+        $data['start_date'] = '25/04/2023';
+        $data['duration'] 	=  25; /*in minutes*/
+        $data['type'] 		= 2;
+        $data['password'] 	=  '12345';
+        // create meeting
+        $response = $zoom_meeting->createMeeting($data);
+
+        // dd($response);
+
+        return $response;
+    }
+
+ 
+ 
+```
+
+Then finally setup Route for the controller.
+
+```
+Route::get('create-meeting', [App\Http\Controllers\ZoomController::class, 'index'])->name('create-meeting');
 
 ```
 
