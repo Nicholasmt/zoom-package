@@ -33,7 +33,9 @@ In the Controller, method has already been created just pass in array data with 
 ```
 For the JWT package
 
-This Package is very simple to use.
+Then finally create a route for the controller.
+
+The Package is very simple to use.
 
 Enjoy! and don't forget to like thanks
 
