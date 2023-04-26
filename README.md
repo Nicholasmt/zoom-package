@@ -20,7 +20,7 @@ ZOOM_API_KEY = your zoom key.
  <h4> Create a Controller </h4>
  
 ```
-php artisan make:controller ZoomController --resource
+php artisan make:controller ZoomController
  
 ```
 
@@ -62,12 +62,8 @@ use Nicholasmt\ZoomLibrary\Zoom;
  
 class ZoomController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    
+    public function zoom_meeting()
     {
         $zoom_meeting = new Zoom();
         $data = array();
@@ -85,14 +81,14 @@ class ZoomController extends Controller
         return $response;
     }
 
- 
+ }
  
 ```
 
 Then finally setup Route for the controller.
 
 ```
-Route::get('create-meeting', [App\Http\Controllers\ZoomController::class, 'index'])->name('create-meeting');
+Route::get('create-meeting', [App\Http\Controllers\ZoomController::class, 'zoom_meeting'])->name('create-meeting');
 
 ```
 
