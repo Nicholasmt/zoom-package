@@ -20,7 +20,7 @@ Your requirements could not be resolved to an installable set of packages.
 
 ```
 
-To Solve simply go the roof folder of your project and open "composer.lock" file
+To Solve simply go the root folder of your project and open "composer.lock" file
 
 Search for "name": "nette/schema" and go under "require" and update the php version to " >=7.1 " and save as below
 
