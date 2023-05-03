@@ -40,10 +40,10 @@ composer require nicholasmt/zoom_library
 
 ```
 
-<h4> Configure the following in .Env file </h4>
+<h4> Add the following in .Env file </h4>
  
 ```env
-ZOOM_EMAIL = your zoom register email.
+ZOOM_EMAIL = your zoom registered email.
 ZOOM_API_SECRET = your zoom secret key.
 ZOOM_API_KEY = your zoom key.
 
