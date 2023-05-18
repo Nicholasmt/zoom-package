@@ -4,10 +4,10 @@
 
 This is a zoom api library package
 
-# To get started
+# To get started Run
 
 ```
-run composer require nicholasmt/zoom_library
+composer require nicholasmt/zoom_library
 
 ```
 
@@ -43,9 +43,9 @@ composer require nicholasmt/zoom_library
 <h4> Add the following in .Env file </h4>
  
 ```env
-ZOOM_EMAIL = your zoom registered email.
-ZOOM_API_SECRET = your zoom secret key.
-ZOOM_API_KEY = your zoom key.
+ACCOUNT_ID    =  your zoom app Acount ID .
+CLIENT_ID     =  your zoom app Client ID.
+CLIENT_SECRET =  your zoom app Client Secret key.
 
 ```
  <h4> Create a Controller </h4>
