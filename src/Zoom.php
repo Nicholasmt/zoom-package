@@ -13,7 +13,9 @@ use \Firebase\JWT\JWT;
 
 class Zoom
 {
- 
+	private $zoom_api_key = 'kd-byVJETwyNw8ri4Tr0Cw';
+	private $zoom_api_secret = 'tUUjbl27weXxmoDcD7CHywfKzVF6cRR3PS9k';	
+  
     //function to generate Token
 	private function generateToken() 
 	{
