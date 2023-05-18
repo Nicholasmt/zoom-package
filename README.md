@@ -4,10 +4,10 @@
 
 This is a zoom api library package
 
-# To get started
+# To get started Run
 
 ```
-run composer require nicholasmt/zoom_library
+composer require nicholasmt/zoom_library
 
 ```
 
