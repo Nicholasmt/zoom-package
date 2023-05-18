@@ -1,6 +1,6 @@
 <?php 
  
- namespace App\Http\Library;
+ namespace Nicholasmt\ZoomLibrary;
  
 //Include Firebase Library and Dependencies
 require_once 'php-jwt-master/src/BeforeValidException.php';
