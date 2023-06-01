@@ -138,4 +138,40 @@ class Zoom
 		    }
         	return json_decode($response);
 	}
+
+	public function update_meeting($meeting_id,$data = array())
+    {
+		 $request_url = "https://api.zoom.us/v2/meetings/".$meeting_id."/status";
+		 $update_body =  json_encode($data);
+		 $headers = array(
+			"authorization: Bearer ".$this->generateToken(),
+			 "content-type: application/json",
+			"Accept: application/json",
+		);
+		   $ch = curl_init();
+        	curl_setopt_array($ch, array(
+            CURLOPT_URL => $request_url,
+	    	CURLOPT_RETURNTRANSFER => true,
+	    	CURLOPT_ENCODING => "",
+	    	CURLOPT_MAXREDIRS => 10,
+	    	CURLOPT_TIMEOUT => 30,
+	    	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+	    	CURLOPT_CUSTOMREQUEST => "PUT",
+			CURLOPT_POSTFIELDS => $update_body,
+	    	CURLOPT_HTTPHEADER => $headers,
+		 
+        	));
+           $response = curl_exec($ch);
+        	$err = curl_error($ch);
+        	curl_close($ch);
+        	if (!$response) 
+			{
+              return $err;
+		    }
+			// return response()->json($response);
+        	return json_decode($response);
+
+	}
+
+	
 }
