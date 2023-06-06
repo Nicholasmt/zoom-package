@@ -23,6 +23,7 @@
             "email": "nicholasmt09@gmail.com"
         }
     ],
+    
     "minimum-stability": "dev",
     
     "autoload": {

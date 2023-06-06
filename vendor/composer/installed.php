@@ -3,7 +3,7 @@
         'name' => 'nicholasmt/zoom_library',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b6b52c8e0e44a0ffa495887703fab47aa7a50b7c',
+        'reference' => '94d08cad07483f2cdf3607eb4ab58c15179a3a04',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'illuminate/collections' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '515242a1556bb8e8811eb55c0066631aef7216ba',
+            'reference' => '32d2ef345b136c859d8de8e432524faffdd1b125',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/collections',
             'aliases' => array(
@@ -44,7 +44,7 @@
         'illuminate/contracts' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '9818867c9529a62697657b1cb4e042bd25e2d166',
+            'reference' => '5d382428a3c1b3b639a5c213e0dc4cc31d7827aa',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/contracts',
             'aliases' => array(
@@ -66,7 +66,7 @@
         'illuminate/support' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '29f038f68b042e8cc9df26c23646126113b10c6d',
+            'reference' => 'e55844a7d185688bd35add6d160eae7bc1eab0fc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/support',
             'aliases' => array(
@@ -77,7 +77,7 @@
         'nesbot/carbon' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '1aec3f8d66ea86c3c9bb4ed0f6b31b156cfc1288',
+            'reference' => 'c1001b3bc75039b07f38a79db5237c4c529e04c8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nesbot/carbon',
             'aliases' => array(
@@ -88,7 +88,7 @@
         'nicholasmt/zoom_library' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b6b52c8e0e44a0ffa495887703fab47aa7a50b7c',
+            'reference' => '94d08cad07483f2cdf3607eb4ab58c15179a3a04',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -139,9 +139,9 @@
             'dev_requirement' => false,
         ),
         'symfony/translation' => array(
-            'pretty_version' => '6.3.x-dev',
-            'version' => '6.3.9999999.9999999-dev',
-            'reference' => '4d9725bd2a0fd4222b03da27da2943400bac541d',
+            'pretty_version' => '6.4.x-dev',
+            'version' => '6.4.9999999.9999999-dev',
+            'reference' => '238d73308a5851542ea1fef3561205c0bf1118a9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation',
             'aliases' => array(),
@@ -150,11 +150,11 @@
         'symfony/translation-contracts' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dfec258b9dd17a6b24420d464c43bffe347441c8',
+            'reference' => '02c24deb352fb0d79db5486c0c79905a85e37e86',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation-contracts',
             'aliases' => array(
-                0 => '3.3.x-dev',
+                0 => '3.4.x-dev',
             ),
             'dev_requirement' => false,
         ),
