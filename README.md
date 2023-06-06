@@ -6,7 +6,7 @@ This is a zoom api library package
 
 # To get started Run
 
-```
+```console
 composer require nicholasmt/zoom_library
 
 ```
