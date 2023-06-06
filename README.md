@@ -1,6 +1,6 @@
 # <img src="https://st2.zoom.us/static/6.3.12613/image/new/topNav/Zoom_logo.svg">
 
-# Api Laravel Package  
+# Laravel Package library for Zoom API to create, update and delete meetings. 
 
 This is a zoom api library package
 
