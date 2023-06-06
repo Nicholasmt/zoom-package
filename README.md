@@ -11,36 +11,31 @@ composer require nicholasmt/zoom_library
 
 ```
 
-Note: if You encounter this error which means you are using "nette/schema/v1.2.2" which requires php version of ">=7.1 <8.2".
+Note: if You encounter this or any other error which means you are using the old version of those packages
 
 ```console
 
 Your requirements could not be resolved to an installable set of packages.
-- nette/schema v1.2.2 requires php >=7.1 <8.2 -> your php version (8.2.4) does not satisfy that requirement.
 
 ```
 
-To Solve simply go the root folder of your project and open "composer.lock" file
+To Resolve simply run
+ 
+```console
 
-Search for "name": "nette/schema" and go under "require" and update the php version to " >=7.1 " and save as below
+ composer update
+ 
+ ```
 
-```json
+After successfull composer update then install the package again with 
+``` composer require nicholasmt/zoom_webhook ```
 
- "require": {
-                "nette/utils": "^2.5.7 || ^3.1.5 ||  ^4.0",
-                "php": ">=7.1"
-            },
-            
-```
+Note: if you encounter any error based on poor network during update, 
 
-Then run composer again.
+just backup the vender file, delete and run composer update again with 
+``` composer update ```
 
-```
-composer require nicholasmt/zoom_library
-
-```
-
-<h4> Add the following in .Env file </h4>
+<h4> Configure in .env file </h4>
  
 ```env
 ACCOUNT_ID    =  your zoom app Acount ID .
